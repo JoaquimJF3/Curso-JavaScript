@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Você é Estrangeiro?🤔</title>
+  <style>
+    body{
+      font: normal 16pt Trebuchet Ms;
+      background: linear-gradient(to right, #dd5e89, #f7bb97 );
+    }
+    h1{
+      color: whitesmoke;
+    }
+    input{
+      border-radius: 5px;
+      border: 1px solid red;
+    }
+    #res{
+      color: white;
+      font: oblique 18pt Arial;
+    }
+  </style>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    Sua Nacionalidade: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="saber()">
+    <div id="res">
+
+    </div>
+    <script>
+      function saber() {
+      var txtnac = document.querySelector('input#txtpais')
+      var res = document.querySelector('div#res')
+      var pais = (txtnac.value)
+      //res.innerHTML = `Vivendo em ${pais}<br>`
+      if (pais == 'Angola') {
+        res.innerHTML += `Você é ANGOLANO!`
+      }else{
+        res.innerHTML += `Você é ESTRANGEIRO!, estás gostando de Angola.`
+      }
+    }
+    </script>
+</body>
+</html>

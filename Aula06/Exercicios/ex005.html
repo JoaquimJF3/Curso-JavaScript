@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex001</title>
+  <style>
+      body{
+        background-color: rgb(70, 199, 134);
+        font: status-bar 20pt Arial;
+      }
+  </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu Nome?')
+        var n1 = Number(window.prompt('Digite a primeira Nota: '))
+        var n2 = Number(window.prompt('Digite a segunda Nota: '))
+        s = (n1 + n2) / 2
+        document.write(`Aluno ${nome} a sua Média é ${s}`)
+    </script>
+</body>
+</html>
